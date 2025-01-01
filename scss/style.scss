@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-.text-font {
+.roboto {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -51,9 +51,43 @@ body {
     }
 }
 
+.reservation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EAEAEA;
+    padding-bottom: 57px;
+    .reservation__title {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 39px 58px 10px 42px;
+        margin: 0;
+    }
+    .reservation__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        padding: 0px 26px 27px 34px;
+        color: #353535;
+    }
+}
 
 
+.btn {
+    border-radius: 25px;
+    padding:13px 18.75px 13px 18.75px;
+}
 
+.btn-gradient {
+    background: linear-gradient(0deg, $main-color -11.44%, $secondary-color 123.39%);
+}
+
+.btn-font {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
 
 
 /****** Media Queries *******/
