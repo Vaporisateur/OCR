@@ -1,4 +1,47 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+}
+
+.text-font {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header__box-logo {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header .header__box-logo .logo--size {
+  height: 30px;
+  width: 162px;
+  padding-top: 14px;
+  padding-bottom: 5px;
+}
+.header .header__box-location {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078), 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.header .header__box-location .location--flex {
+  display: flex;
+  gap: 17px;
+  color: #353535;
+}
+
 /****** Media Queries *******/
 /* Tablettes (et plus) */
 /* Écrans de bureau *//*# sourceMappingURL=style.css.map */
