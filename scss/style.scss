@@ -12,7 +12,6 @@ body {
     font-weight: 500;
 }
 
-
 .header {
     display: flex;
     flex-direction: column;
@@ -69,12 +68,56 @@ body {
         padding: 0px 26px 27px 34px;
         color: #353535;
     }
+    .btn-reservation {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        color: white;
+        padding:13px 18.75px 13px 18.75px;
+        box-shadow: 0px 4px 10px 0px #00000040;
+    }
 }
 
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 24.92px;
+    margin: 19px 20px 68px 20px;
+    .fonctionnement__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .btn-fonctionnement {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 28.59px 0px 28.12px 0px;
+        background-color: #F6F6F6;
+        gap: 23px;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        width: 95%;
+        margin-left: 12.51px;
+    }
+    .btn-ordre {
+        display: flex;
+        position: relative;
+        left: -11px;
+        background-color: $main-color;
+        color: white;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 2px;
+        padding-bottom:2px;
+    }
+}
 
-.btn {
+.btn-rounded {
     border-radius: 25px;
-    padding:13px 18.75px 13px 18.75px;
+}
+
+.btn-rectangle {
+    border-radius: 20px;
 }
 
 .btn-gradient {
@@ -85,10 +128,21 @@ body {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    color: white;
     text-decoration: none;
 }
 
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-grey {
+    color: #7E7E7E;
+}
+
+.icon-purple {
+    color: #9356DC;
+}
 
 /****** Media Queries *******/
 
