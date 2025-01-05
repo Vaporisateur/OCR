@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header__box-logo {
+        height: 63px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .logo--size {
+            height: 30px;
+            width: 162px;
+            padding-top: 14px;
+            padding-bottom: 5px;
+        }
+    }
+    .header__box-location {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #EAEAEA;
+        box-shadow: inset 0px 2px 4px 0px #00000026,
+                          0px 4px 4px 0px #00000040;
+        .location--flex {
+            display: flex;
+            gap: 17px;
+            color: #353535;
+        }
+    }
+}

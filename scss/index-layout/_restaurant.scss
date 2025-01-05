@@ -1,0 +1,10 @@
+.restaurants {
+    background-color: #F6F6F6;
+    padding: 45px 0px 45px 0px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        margin-left: 20px;
+        margin-top: 9px;
+    }
+}

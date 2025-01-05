@@ -1,0 +1,23 @@
+.btn-rounded {
+    border-radius: 25px;
+}
+
+.btn-rectangle {
+    border-radius: 20px;
+}
+
+.btn-gradient {
+    background: linear-gradient(0deg, $main-color -11.44%, $secondary-color 123.39%);
+}
+
+.btn-font {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}

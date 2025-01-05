@@ -1,0 +1,30 @@
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 24.92px;
+    margin: 19px 20px 68px 20px;
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .btn-fonctionnement {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 28.59px 0px 28.12px 0px;
+        background-color: #F6F6F6;
+        gap: 23px;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        width: 95%;
+        margin-left: 12.51px;
+    }
+    .btn-ordre {
+        display: flex;
+        position: relative;
+        left: -11px;
+        background-color: $main-color;
+        color: white;
+        padding: 2px 7px 2px 7px;
+    }
+}

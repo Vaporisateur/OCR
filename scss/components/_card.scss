@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 17px 17px 17px;
+    height: 251px;
+    &__img {
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 70%;
+    }
+    &__content {
+        background-color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 13px;
+        padding-right: 25px;
+        height: 30%;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+    &__subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        margin: 2px 0px 0px 0px;
+    }
+}

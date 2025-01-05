@@ -1,14 +1,4 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-}
-
-.roboto {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -42,68 +32,6 @@ body {
   color: #353535;
 }
 
-.reservation {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: #EAEAEA;
-  padding-bottom: 57px;
-}
-.reservation .reservation__title {
-  font-size: 24px;
-  font-weight: 700;
-  padding: 39px 58px 10px 42px;
-  margin: 0;
-}
-.reservation .reservation__subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  padding: 0px 26px 27px 34px;
-  color: #353535;
-}
-.reservation .btn-reservation {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  color: white;
-  padding: 13px 18.75px 13px 18.75px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-}
-
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  gap: 24.92px;
-  margin: 19px 20px 68px 20px;
-}
-.fonctionnement .fonctionnement__title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.fonctionnement .btn-fonctionnement {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 28.59px 0px 28.12px 0px;
-  background-color: #F6F6F6;
-  gap: 23px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  width: 95%;
-  margin-left: 12.51px;
-}
-.fonctionnement .btn-ordre {
-  display: flex;
-  position: relative;
-  left: -11px;
-  background-color: #9356DC;
-  color: white;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
 .btn-rounded {
   border-radius: 25px;
 }
@@ -134,6 +62,118 @@ body {
 
 .icon-purple {
   color: #9356DC;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 17px 17px 17px;
+  height: 251px;
+}
+.card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 70%;
+}
+.card__content {
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 13px;
+  padding-right: 25px;
+  height: 30%;
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.card__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 2px 0px 0px 0px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 24.92px;
+  margin: 19px 20px 68px 20px;
+}
+.fonctionnement__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.fonctionnement .btn-fonctionnement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 28.59px 0px 28.12px 0px;
+  background-color: #F6F6F6;
+  gap: 23px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  width: 95%;
+  margin-left: 12.51px;
+}
+.fonctionnement .btn-ordre {
+  display: flex;
+  position: relative;
+  left: -11px;
+  background-color: #9356DC;
+  color: white;
+  padding: 2px 7px 2px 7px;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding-bottom: 57px;
+}
+.reservation__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 39px 58px 10px 42px;
+  margin: 0;
+}
+.reservation__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0px 26px 27px 34px;
+  color: #353535;
+}
+.reservation .btn-reservation {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  color: white;
+  padding: 13px 18.75px 13px 18.75px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 45px 0px 45px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants__title {
+  margin-left: 20px;
+  margin-top: 9px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /****** Media Queries *******/
