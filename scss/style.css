@@ -98,6 +98,19 @@
   font-weight: 300;
   margin: 2px 0px 0px 0px;
 }
+.card__new {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4%;
+}
+
+.card__position {
+  position: absolute;
+  color: #008766;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  padding: 6px 9px 6px 9px;
+}
 
 .fonctionnement {
   display: flex;
