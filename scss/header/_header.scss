@@ -35,3 +35,12 @@
         display: none;
     }
 }
+
+.header-arrow {
+    position: absolute;
+    top: 24px;
+    left: 23px;
+    z-index: 1001;
+    text-decoration: none;
+    color: #353535;
+}
