@@ -70,6 +70,13 @@
   padding: 0px 17px 17px 17px;
   height: 251px;
 }
+.card__link {
+  display: flex;
+  flex-direction: column;
+  height: 251px;
+  text-decoration: none;
+  color: black;
+}
 .card__img {
   -o-object-fit: cover;
      object-fit: cover;
