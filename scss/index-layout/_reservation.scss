@@ -17,12 +17,19 @@
         padding: 0px 26px 27px 34px;
         color: #353535;
     }
-    .btn-reservation {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        color: white;
-        padding:13px 18.75px 13px 18.75px;
-        box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+.btn-reservation {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: white;
+    background: linear-gradient(0deg, $main-color -11.44%, $secondary-color 123.39%);
+    padding:13px 18.75px 13px 18.75px;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
+    &:hover {
+        box-shadow: 0px 4px 15px 0px #00000059;
+        filter: brightness(1.10);
     }
 }

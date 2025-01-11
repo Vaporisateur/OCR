@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    max-width: 100%;
     &__title {
         font-weight: 300;
         font-size: 16px;
@@ -37,32 +38,72 @@
     }
     &__card {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         background-color: #FFFFFF;
-        height: 69px;
-        padding-left: 15px;
-        padding-right: 15px;
         border-radius: 15.04px;
         box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+        max-width: 100%;
+        padding: 1rem;
+        overflow: hidden;
+        cursor: pointer;
         &__content {
             display: flex;
             flex-direction: column;
+            flex-grow: 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__title {
             margin: 0;
             font-size: 18px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__subtitle {
             margin: 5px 0 0 0;
             font-size: 15.04px;
             font-weight: 300;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__price {
-            margin-top: 25px;
             color: #353535;
+            padding-left: 1rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
         }
     }
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    width: 4rem;
+    margin: -1rem -5rem -1rem 1rem;
+    transition: 0.5s;
+    .fas {
+        color: #99E2D0;
+        border-radius: 50%;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.menu__card:hover .checkbox-container {
+        margin-right: -1rem;
+}
+
+.menu-checkbox {
+    display: none;
 }
 
 .img-menu {
