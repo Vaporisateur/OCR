@@ -45,6 +45,8 @@
         padding: 1rem;
         overflow: hidden;
         cursor: pointer;
+        opacity: 0;
+        animation: slidedown 1s forwards;
         &__content {
             display: flex;
             flex-direction: column;

@@ -193,6 +193,32 @@
           clip-path: inset(0 0 0 0); /* Découvre progressivement de bas en haut */
 }
 
+.menu__card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.menu__card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.menu__card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.menu__card:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -353,6 +379,8 @@
   padding: 1rem;
   overflow: hidden;
   cursor: pointer;
+  opacity: 0;
+  animation: slidedown 1s forwards;
 }
 .menu__card__content {
   display: flex;
