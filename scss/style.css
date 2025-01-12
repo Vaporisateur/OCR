@@ -142,6 +142,57 @@
   padding: 6px 9px 6px 9px;
 }
 
+.heart-checkbox {
+  display: none;
+}
+
+.heart-container {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.heart-container .far {
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.heart-container .fas {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0); /* Masqué par défaut */
+  transition: -webkit-clip-path 0.4s ease-in-out;
+  transition: clip-path 0.4s ease-in-out;
+  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.heart-checkbox:checked + .far {
+  opacity: 0;
+}
+
+.heart-checkbox:checked ~ .fas {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0); /* Découvre progressivement de bas en haut */
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -218,57 +269,6 @@
   margin-left: 20px;
   margin-top: 9px;
   font-size: 24px;
-}
-
-.heart-checkbox {
-  display: none;
-}
-
-.heart-container {
-  position: relative;
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-}
-
-.heart-container .far {
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: opacity 0.2s ease-in-out;
-  z-index: 2;
-}
-
-.heart-container .fas {
-  font-size: 2rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  -webkit-clip-path: inset(100% 0 0 0);
-          clip-path: inset(100% 0 0 0); /* Masqué par défaut */
-  transition: -webkit-clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
-  z-index: 1;
-}
-
-.heart-checkbox:checked + .far {
-  opacity: 0;
-}
-
-.heart-checkbox:checked ~ .fas {
-  -webkit-clip-path: inset(0 0 0 0);
-          clip-path: inset(0 0 0 0); /* Découvre progressivement de bas en haut */
 }
 
 .footer {
@@ -357,10 +357,11 @@
 .menu__card__content {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  cursor: pointer;
 }
 .menu__card__title {
   margin: 0;
@@ -379,7 +380,6 @@
 }
 .menu__card__price {
   color: #353535;
-  padding-left: 1rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -390,7 +390,7 @@
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
-  width: 4rem;
+  width: 59px;
   margin: -1rem -5rem -1rem 1rem;
   transition: 0.5s;
 }
@@ -405,12 +405,13 @@
   justify-content: center;
 }
 
-.menu__card:hover .checkbox-container {
-  margin-right: -1rem;
-}
-
 .menu-checkbox {
   display: none;
+}
+
+.menu-checkbox:checked ~ .checkbox-container {
+  margin-right: -1rem; /* Place la checkbox à l'intérieur de la carte */
+  transition: margin 0.5s ease, background-color 0.3s ease;
 }
 
 .img-menu {
