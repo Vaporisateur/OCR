@@ -9,18 +9,6 @@
     height: 2rem;
 }
 
-.heart-container .far {
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: opacity 0.2s ease-in-out;
-    z-index: 2;
-}
-
 .heart-container .fas {
     font-size: 2rem;
     position: absolute;
@@ -35,6 +23,19 @@
     transition: clip-path 0.4s ease-in-out;
     z-index: 1;
 }
+
+.heart-container .far {
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: opacity 0.2s ease-in-out;
+        z-index: 2;
+}
+
 
 .heart-checkbox:checked + .far {
     opacity: 0;

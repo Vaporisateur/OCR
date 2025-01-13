@@ -1,0 +1,54 @@
+/* Écrans de bureau */
+@media (min-width: 768px) {
+    .reservation {
+        padding-bottom: 30px;
+        &__title {
+            font-size: 40px;
+            padding-bottom: 18px;
+            padding-top: 30px;
+        }
+        &__subtitle {
+            padding: 10px 0px 25px 0px;
+        }
+    }
+
+    .btn-reservation {
+        width: 218px;
+        padding: 15px 0px;
+    }
+
+    .fonctionnement {
+        max-width: 1053px;
+        margin: auto;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        &__cards {
+            flex-direction: row;
+        }
+    }
+
+    .restaurants {
+        padding-bottom: 15px;
+        &__container {
+            width: 100%;
+            max-width: 1080px;
+            margin: auto;
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+    }
+
+    .footer {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 100px;
+        padding: 50px 26px 30px 20px;
+        &__ul {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+}

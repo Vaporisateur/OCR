@@ -8,6 +8,11 @@
         font-weight: 700;
         margin-bottom: 0;
     }
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24.92px;
+    }
     .btn-fonctionnement {
         display: flex;
         justify-content: flex-start;

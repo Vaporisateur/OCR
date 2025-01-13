@@ -14,21 +14,12 @@ $third-color: #99E2D0;
 @import 'footer/footer';
 @import 'menu-layout/menu';
 
+@import 'media-queries/index-mediaquery';
+@import 'media-queries/menu-mediaquery';
+
 body {
     margin: 0;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-}
-
-/****** Media Queries *******/
-
-/* Tablettes (et plus) */
-@media (min-width: 768px) {
-
-}
-
-/* Écrans de bureau */
-@media (min-width: 1024px) {
-
 }
