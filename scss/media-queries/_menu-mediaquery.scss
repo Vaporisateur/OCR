@@ -8,4 +8,14 @@
             gap: 20px;
         }
     }
+    .footer {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 100px;
+        padding: 50px 26px 30px 20px;
+        &__ul {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
 }

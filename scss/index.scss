@@ -2,20 +2,21 @@ $main-color: #9356DC;
 $secondary-color: #FF79DA;
 $third-color: #99E2D0;
 
-@import 'header/header';
 @import 'components/button';
 @import 'components/colors';
 @import 'components/card';
 @import 'components/heart';
-@import 'components/animation-menu';
+@import 'components/loader';
+
+@import 'header/header';
+
 @import 'index-layout/fonctionnement';
 @import 'index-layout/reservation';
 @import 'index-layout/restaurant';
+
 @import 'footer/footer';
-@import 'menu-layout/menu';
 
 @import 'media-queries/index-mediaquery';
-@import 'media-queries/menu-mediaquery';
 
 body {
     margin: 0;
